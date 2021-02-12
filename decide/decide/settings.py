@@ -73,7 +73,12 @@ MODULES = [
     'voting',
 ]
 
-BASEURL = 'http://localhost:8000'
+BASEURL = 'https://egc-1230-angcabdom.herokuapp.com'
+
+APIS = {}
+
+import django_heroku
+django_heroku.settings(locals())
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
